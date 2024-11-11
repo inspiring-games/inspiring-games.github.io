@@ -59,6 +59,8 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
+author_profile: false
+
 #author:
   #name   : "First Lastname"
  # avatar : "/assets/images/bio-photo.jpg"
