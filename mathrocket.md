@@ -3,7 +3,8 @@ layout: single
 permalink: /mathrocket/
 title: Math Rocket
 header:
-  overlay_image: /assets/images/mathrocket.jpg
+  overlay_color: "#ff0000"
+  overlay_image: /assets/images/MathRocket.jpg
 ---
 
 Explore euclidean space by programming your rocket with mathematical functions, steering it through asteroid fields, avoiding planets and comets, picking up fuel and lost crewmates, and docking safely at the space station.
