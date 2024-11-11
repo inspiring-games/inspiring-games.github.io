@@ -3,7 +3,6 @@ layout: single
 permalink: /mathrocket/
 title: Math Rocket
 header:
-  overlay_color: "#ff0000"
   overlay_image: /assets/images/mathrocket.jpg
 ---
 
