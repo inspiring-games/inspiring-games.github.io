@@ -14,3 +14,7 @@ Explore euclidean space by programming your rocket with mathematical functions, 
 Many kids and adults, especially neurodivergent ones, learn much better when they get **instant feedback**. If you write an answer on your math homework and you get an answer a week later, it will already have left your mind a long time ago. Also it's **boring!**
 
 With Math Rocket, you immediately see the results of your equation. If it's wrong, you'll crash into a rock or end up floating helpless in space. If you're right, you're rewarded. And you can experiment, make adjustment, until you figure it out. You get a more intuitive feeling for what the various functions do and how the different parts of the equation affect one another. 
+
+# Play it now
+
+<iframe src="https://itch.io/embed/2933559" width="552" height="167" frameborder="0"><a href="https://inspiringgames.itch.io/math-rocket">Math Rocket by Inspiring Games</a></iframe>
