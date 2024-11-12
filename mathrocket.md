@@ -19,4 +19,6 @@ With Math Rocket, you immediately see the results of your equation. If it's wron
 
 # Play it now
 
+The game is hosted on [Itch.io](https://inspiringgames.itch.io/math-rocket). It's available as an APK file that can be installed on Android devices, and as a web app that can be played online. *Unfortunately Apple have not endeavoured to keep up with technology, so it won't run on iOS devices.*
+
 <iframe src="https://itch.io/embed/2933559" width="552" height="167" frameborder="0"><a href="https://inspiringgames.itch.io/math-rocket">Math Rocket by Inspiring Games</a></iframe>
