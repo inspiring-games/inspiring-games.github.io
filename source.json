@@ -30,36 +30,33 @@
             "versions": [
                 {
                     "version": "1.1",
-                    "date": "2024-11-17T09:00:00-08:00",
-                    "size": 20000000,
+                    "date": "2024-11-16T09:00:00-08:00",
+                    "size": 36965512,
                     "downloadURL": "https://inspiring.games/mathrocket-1.1.ipa",
-                    "localizedDescription": "New features and bug fixes.",
-                    "minOSVersion": "12.0"
+                    "localizedDescription": "First release on iOS via AltStore!",
+                    "minOSVersion": "13.0"
                 }
             ],
             "appPermissions": {
                 "entitlements": [
-                    "com.apple.security.application-groups",
-                    "com.apple.developer.siri"
+          
                 ],
                 "privacy": {
-                    "NSPhotoLibraryUsageDescription": "App saves photos to your Photo Library.",
-                    "NSCameraUsageDescription": "App uses camera to take photos.",
-                    "NSMicrophoneUsageDescription": "App uses microphone to record video."
+                 
                 }
             }
         }
     ],
     "news": [
         {
-            "title": "New Feature Announcement",
-            "identifier": "new_feature",
-            "caption": "Introducing a new feature in AltStore!",
-            "date": "2023-03-15",
+            "title": "First release on AltStore!",
+            "identifier": "firstrelease",
+            "caption": "First release of Math Rocket on AltStore!",
+            "date": "2024-11-16",
             "tintColor": "#5CA399",
-            "imageURL": "https://example.com/new_feature_image.png",
+            "imageURL": "https://img.itch.zone/aW1nLzE4MDYyOTc5LmpwZw==/original/iRoK95.jpg",
             "notify": true,
-            "url": "https://example.com/new_feature_details"
+            "url": "https://inspiring.games/mathrocket"
         }
     ]
 }
