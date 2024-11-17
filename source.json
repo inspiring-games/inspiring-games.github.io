@@ -14,7 +14,7 @@
             "name": "Math Rocket",
             "bundleIdentifier": "games.inspiring.mathrocket",
             "developerName": "Jack Fox",
-            "subtitle": "Navigate your starship with math!",
+            "subtitle": "Navigate through space with math!",
             "localizedDescription": "Use mathematical formulas to navigate your rocket, picking up fuel and lost crew mates, and docking safely at your space station. Beware of crashing into planets or asteroids, and don't run out of fuel!",
             "iconURL": "https://img.itch.zone/aW1nLzE4MDY0MzQ1LmpwZw==/315x250%23c/HTo1hH.jpg",
             "tintColor": "#5CA399",
@@ -30,7 +30,7 @@
             "versions": [
                 {
                     "version": "1.1",
-                    "date": "2022-05-01T09:00:00-08:00",
+                    "date": "2024-11-17T09:00:00-08:00",
                     "size": 20000000,
                     "downloadURL": "https://inspiring.games/mathrocket-1.1.ipa",
                     "localizedDescription": "New features and bug fixes.",
