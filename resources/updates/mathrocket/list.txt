@@ -1,2 +1,2 @@
-https://inspiring.games/resources/updates/mathrocket/200-Going on a tangent.tscn
-https://inspiring.games/resources/updates/mathrocket/210-Long tangent.tscn
+https://inspiring.games/resources/updates/mathrocket/200-Going_on_a_tangent.tscn
+https://inspiring.games/resources/updates/mathrocket/210-Long_tangent.tscn
