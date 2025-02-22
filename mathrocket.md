@@ -19,4 +19,6 @@ With Math Rocket, you immediately see the results of your equation. If it's wron
 
 # Get it now!
 
+Math Rocket Euclid is available on Google Play!
+
 [![Get it on Google Play](/assets/images/GooglePlay.png)](https://play.google.com/store/apps/details?id=games.inspiring.mathrocket)
