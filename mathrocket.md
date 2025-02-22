@@ -1,7 +1,7 @@
 ---
 layout: single
 permalink: /mathrocket/
-title: Math Rocket
+title: Math Rocket Euclid
 header:
   overlay_color: "#ff0000"
   overlay_image: /assets/images/MathRocket.jpg
@@ -17,8 +17,8 @@ Many kids and adults, especially neurodivergent ones, learn much better when the
 
 With Math Rocket, you immediately see the results of your equation. If it's wrong, you'll crash into a rock or end up floating helpless in space. If you're right, you're rewarded. And you can experiment, make adjustment, until you figure it out. You get a more intuitive feeling for what the various functions do and how the different parts of the equation affect one another. 
 
-# Play it now
+# Get it now!
 
-The game is hosted on [Itch.io](https://inspiringgames.itch.io/math-rocket). It's available as an APK file that can be installed on Android devices, and as a web app that can be played online. *Unfortunately Apple have not endeavoured to keep up with technology, so it won't run on iOS devices.*
+[Math rocket Euclid is available for free on Google Play](https://play.google.com/store/apps/details?id=games.inspiring.mathrocket)
 
-<iframe src="https://itch.io/embed/2933559" width="552" height="167" frameborder="0"><a href="https://inspiringgames.itch.io/math-rocket">Math Rocket by Inspiring Games</a></iframe>
+![Get it on Google Play](/assets/images/GooglePlay.png)
