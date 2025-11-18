@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1763193855|52144430310';
+const CACHE_VERSION = '1763495898|1168661769';
 /** @type {string} */
 const CACHE_PREFIX = 'RainbowRace-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
