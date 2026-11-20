@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bible Gems – Chronological Bible Reading Plan</title>
+<meta name="description" content="A one-year chronological Bible reading plan with saved progress.">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-plan="3">
+<header class="site-header">
+  <div class="topbar">
+    <nav id="plan-nav" class="plan-nav" aria-label="Reading plan">
+      <a href="index.html" data-plan="1">1 year</a>
+      <a href="two-years.html" data-plan="2">2 years</a>
+      <a href="three-years.html" data-plan="3">3 years</a>
+    </nav>
+    <label class="lang"><span id="lang-label">Language</span>
+      <select id="lang-select" aria-label="Language"></select>
+    </label>
+  </div>
+  <h1 id="page-title">Bible Gems – Chronological Bible Reading Plan</h1>
+  <div class="progress-wrap">
+    <p id="progress-text" class="progress-text" aria-live="polite">Completed: 0 / 1095</p>
+    <div id="progress-bar" class="progress-bar" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="1095" aria-valuenow="0"><span id="progress-fill"></span></div>
+    <button type="button" id="reset-btn" class="reset-btn">Reset progress</button>
+  </div>
+</header>
+<main>
+  <ol id="readings" class="grid" aria-label="Daily readings"></ol>
+  <noscript><p class="notice">This page needs JavaScript to display the reading plan.</p></noscript>
+  <p id="error" class="notice" hidden>The readings could not be loaded. Please reload the page.</p>
+</main>
+<script src="assets/app.js"></script>
+</body>
+</html>
