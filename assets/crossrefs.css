@@ -1,0 +1,11 @@
+.pickers{display:grid;grid-template-columns:2fr 1fr 1fr;gap:.75rem;margin:.5rem 0 1.5rem}
+@media (max-width:520px){.pickers{grid-template-columns:1fr 1fr}.picker.book{grid-column:1 / -1}}
+.picker{display:flex;flex-direction:column;gap:.25rem;font-size:.8rem;color:var(--muted);min-width:0}
+.picker select{font:inherit;font-size:1rem;color:var(--text);background:#fff;border:1px solid var(--line);border-radius:6px;padding:.6rem .5rem;min-height:2.75rem;width:100%}
+.picker select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.result h2{font-size:1.15rem;font-weight:600;margin:0 0 .25rem;color:var(--accent-dark)}
+.refs-link{display:block;margin-top:.75rem;padding:.9rem 1rem;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:4px;color:var(--text);text-decoration:none;line-height:1.8;overflow-wrap:anywhere}
+.refs-link:hover{color:var(--accent-dark);border-color:var(--accent)}
+.refs-link:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.plan-nav{flex-wrap:wrap}
+.refs-link[hidden]{display:none}

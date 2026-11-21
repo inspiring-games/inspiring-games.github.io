@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bible Gems – Cross References</title>
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/crossrefs.css">
+</head>
+<body data-plan="refs">
+<header class="site-header">
+  <div class="topbar">
+    <nav id="plan-nav" class="plan-nav" aria-label="Reading plan">
+      <a href="index.html" data-plan="1">1 year</a>
+      <a href="two-years.html" data-plan="2">2 years</a>
+      <a href="three-years.html" data-plan="3">3 years</a>
+      <a href="cross-references.html" data-plan="refs">Cross references</a>
+    </nav>
+    <label class="lang"><span id="lang-label">Language</span>
+      <select id="lang-select" aria-label="Language"></select>
+    </label>
+  </div>
+  <h1 id="page-title">Bible Gems – Cross References</h1>
+</header>
+<main>
+  <div class="pickers">
+    <label class="picker book"><span id="book-label">Book</span><select id="book-select"></select></label>
+    <label class="picker"><span id="chapter-label">Chapter</span><select id="chapter-select"></select></label>
+    <label class="picker"><span id="verse-label">Verse</span><select id="verse-select"></select></label>
+  </div>
+  <section class="result" aria-live="polite">
+    <h2 id="verse-title"></h2>
+    <p id="verse-count" class="progress-text"></p>
+    <a id="refs-link" class="refs-link" target="_blank" rel="noopener noreferrer" hidden></a>
+    <p id="refs-none" class="notice" hidden></p>
+  </section>
+  <p id="error" class="notice" hidden>The Bible data could not be loaded. Please reload the page.</p>
+</main>
+<script src="assets/crossrefs.js"></script>
+</body>
+</html>
