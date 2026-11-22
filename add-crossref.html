@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Add cross references</title>
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/crossrefs.css">
+<style>
+ fieldset{border:1px solid var(--line);border-radius:6px;margin:0 0 1rem;padding:.75rem}
+ legend{color:var(--accent-dark);font-weight:600;padding:0 .4rem}
+ .pickers.four{grid-template-columns:2fr 1fr 1fr 1fr;margin:0}
+ @media (max-width:520px){.pickers.four{grid-template-columns:1fr 1fr 1fr}.pickers.four .book{grid-column:1 / -1}}
+ .btn{font:inherit;font-size:1rem;min-height:2.75rem;padding:.5rem 1rem;border-radius:6px;border:1px solid var(--accent);background:var(--accent);color:#fff;cursor:pointer}
+ .btn.alt{background:#fff;color:var(--accent-dark)}
+ .btn:disabled{opacity:.45;cursor:default}
+ .row{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin:.75rem 0}
+ .status{color:var(--muted);font-size:.9rem;margin:.25rem 0 1rem}
+ .check{display:flex;gap:.6rem;align-items:center;margin:.75rem 0}
+ .check input{width:1.4rem;height:1.4rem;accent-color:var(--accent)}
+ #log{padding-left:1.2rem;margin:.5rem 0}
+ #log li{margin:.3rem 0;overflow-wrap:anywhere}
+ .warn{color:#9a3b1f}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <h1>Add cross references</h1>
+  <p class="progress-text">Edits a copy of crossrefs.json in your browser. Nothing is uploaded.</p>
+</header>
+<main>
+  <fieldset>
+    <legend>1. Load the file</legend>
+    <div class="row">
+      <button type="button" id="load-site" class="btn alt">Load from the site</button>
+      <label class="btn alt" for="file-in" style="display:inline-flex;align-items:center">Choose file…</label>
+      <input type="file" id="file-in" accept=".json,application/json" hidden>
+    </div>
+    <p id="status" class="status">No file loaded.</p>
+  </fieldset>
+
+  <fieldset>
+    <legend>2. First scripture</legend>
+    <div class="pickers four" data-p="1">
+      <label class="picker book"><span>Book</span><select class="b"></select></label>
+      <label class="picker"><span>Chapter</span><select class="c"></select></label>
+      <label class="picker"><span>Verse</span><select class="v"></select></label>
+      <label class="picker"><span>To verse</span><select class="e"></select></label>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>3. Second scripture</legend>
+    <div class="pickers four" data-p="2">
+      <label class="picker book"><span>Book</span><select class="b"></select></label>
+      <label class="picker"><span>Chapter</span><select class="c"></select></label>
+      <label class="picker"><span>Verse</span><select class="v"></select></label>
+      <label class="picker"><span>To verse</span><select class="e"></select></label>
+    </div>
+  </fieldset>
+
+  <label class="check"><input type="checkbox" id="both" checked><span>Add the link both ways (second also points back to first)</span></label>
+  <div class="row">
+    <button type="button" id="add" class="btn" disabled>Add link</button>
+    <button type="button" id="undo" class="btn alt" disabled>Undo last</button>
+  </div>
+  <p id="msg" class="status" aria-live="polite"></p>
+  <ul id="log"></ul>
+
+  <fieldset>
+    <legend>4. Save the file</legend>
+    <p id="unsaved" class="status">No changes yet.</p>
+    <div class="row">
+      <button type="button" id="share" class="btn" disabled>Share / Save to Files</button>
+      <button type="button" id="download" class="btn alt" disabled>Download</button>
+    </div>
+  </fieldset>
+</main>
+<script src="assets/addcrossref.js"></script>
+</body>
+</html>
