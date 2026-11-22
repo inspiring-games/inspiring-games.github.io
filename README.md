@@ -1,14 +1,33 @@
 # Bible Gems – Chronological Bible Reading Plan
 
-A static site (HTML, CSS, vanilla JS) for **biblegems.online**: 365 daily readings in chronological order, each with a checkbox and a link to a search on the Watchtower ONLINE LIBRARY (WOL). Dates are not displayed.
+A static site (HTML, CSS, vanilla JS) for **biblegems.online**. Three pages, one reading plan at three speeds:
+
+| Page | Plan | Items |
+|---|---|---|
+| `index.html` | 1 year | 365 (the original PDF readings) |
+| `two-years.html` | 2 years | 730 (each day split in two by verse count) |
+| `three-years.html` | 3 years | 1095 (each day split in three by verse count) |
+
+Every item has a checkbox and links to a search on the Watchtower ONLINE LIBRARY (WOL) in the chosen language. Dates are not displayed.
+
+## Languages
+A selector at the top switches the language. It translates the Bible book names and the page text, and links go to that language's WOL (`/en/wol/l/r1/lp-e`, `/ro/wol/l/r34/lp-m`, `/sv/wol/l/r14/lp-z`). The choice is remembered, and `?lang=ro` in the address selects a language directly. Book names are taken from each language's Bible index on WOL.
+
+In English, the 1-year page shows the PDF's exact wording (e.g. `Ge.10:21 - 11:26`). All other pages and languages show full book names.
+
+**Adding a language:** in `data/bible.json`, copy one entry under `langs`, then change the label, the `wol` base URL (from the language's WOL address), the 66 book names (same order as English) and the `ui` texts.
 
 ## Files
-- `index.html`, `assets/styles.css`, `assets/app.js` – the site
-- `readings.json` – array of exactly 365 reading strings, extracted from the source PDF
+- `index.html`, `two-years.html`, `three-years.html`, `assets/styles.css`, `assets/app.js` – the site
+- `data/plan-1.json`, `plan-2.json`, `plan-3.json` – readings as `[book, firstVerse, lastVerse]` ranges (verse numbers count from the start of each book)
+- `data/bible.json` – chapter/verse counts, book names and page texts per language
 - `CNAME` – contains `biblegems.online`
 
+## How the 2- and 3-year plans were made
+Each day of the 1-year plan is cut into two or three parts with a similar number of verses. A cut moves to the nearest chapter or reference boundary when one is close, otherwise it falls between verses. Chapter and verse counts follow the common (KJV-style) numbering. The smallest parts are about 9 verses (3-year) and 12 verses (2-year).
+
 ## Progress is stored locally
-Checkbox progress is saved in your browser's `localStorage`. There is no account or server. Progress does **not** sync between devices or browsers, and clearing site data erases it.
+Checkbox progress is saved in your browser's `localStorage`. There is no account or server. Progress does **not** sync between devices or browsers, and clearing site data erases it. Each plan has its own progress, so ticking items on the 2-year page does not tick them on the 1-year page.
 
 ## Publish on GitHub Pages
 1. **Create a repository:** on github.com choose New repository, name it (e.g. `biblegems`), set it Public, and create it.
