@@ -77,15 +77,22 @@
   }
   function show() {
     var list = tidy(refs[pos.b + ':' + pos.c + ':' + pos.v] || []);
-    var title = refText({ b: pos.b, c1: pos.c, v1: pos.v, c2: pos.c, v2: pos.v });
-    $('verse-title').textContent = title;
-    var link = $('refs-link'), none = $('refs-none');
+    var topic = refText({ b: pos.b, c1: pos.c, v1: pos.v, c2: pos.c, v2: pos.v });
+    var parts = list.map(refText);
+    // the topic verse goes first in every search, so it heads the results
+    var search = wolUrl([topic].concat(parts).join('; '));
+    var title = $('verse-title');
+    title.textContent = '';
+    var ta = document.createElement('a');
+    ta.href = search; ta.target = '_blank'; ta.rel = 'noopener noreferrer'; ta.className = 'topic-link'; ta.textContent = topic;
+    title.appendChild(ta);
+    var link = $('refs-link'), none = $('refs-none'), hint = $('refs-hint');
     if (!list.length) {
       link.hidden = true; none.hidden = false; none.textContent = T('none');
-      $('verse-count').textContent = '';
+      hint.hidden = true; $('verse-count').textContent = '';
     } else {
-      var text = list.map(refText).join('; ');
-      link.textContent = text; link.href = wolUrl(text); link.hidden = false; none.hidden = true;
+      link.textContent = parts.join('; '); link.href = search; link.hidden = false; none.hidden = true;
+      hint.textContent = T('hint'); hint.hidden = false;
       $('verse-count').textContent = T('count').replace('{n}', list.length);
     }
     try { localStorage.setItem(POS_KEY, JSON.stringify([pos.b, pos.c, pos.v])); } catch (e) {}
@@ -124,6 +131,11 @@
       return r.json();
     }).catch(function (e) { if (optional) return {}; throw e; });
   }
+
+  (function () {
+    var h = document.createElement('p'); h.id = 'refs-hint'; h.className = 'hint'; h.hidden = true;
+    $('refs-link').insertAdjacentElement('afterend', h);
+  })();
 
   Promise.all([json('data/bible.json'), json('data/refs-ui.json'), json('data/crossrefs.json', true)]).then(function (res) {
     bible = res[0]; rui = res[1]; refs = flatten(res[2]);

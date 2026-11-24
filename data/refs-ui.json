@@ -1,5 +1,35 @@
 {
- "en": {"nav":"Cross references","title":"Bible Gems – Cross References","book":"Book","chapter":"Chapter","verse":"Verse","count":"Cross references: {n}","none":"No cross references registered for this verse.","error":"The Bible data could not be loaded. Please reload the page."},
- "ro": {"nav":"Referințe încrucișate","title":"Bible Gems – Referințe încrucișate","book":"Cartea","chapter":"Capitolul","verse":"Versetul","count":"Referințe: {n}","none":"Pentru acest verset nu sunt înregistrate referințe încrucișate.","error":"Datele biblice nu au putut fi încărcate. Reîncarcă pagina."},
- "sv": {"nav":"Korsreferenser","title":"Bible Gems – Korsreferenser","book":"Bok","chapter":"Kapitel","verse":"Vers","count":"Korsreferenser: {n}","none":"Inga korsreferenser är registrerade för det här verset.","error":"Bibeldatan kunde inte laddas. Ladda om sidan."}
+ "en": {
+  "nav": "Cross references",
+  "title": "Bible Gems – Cross References",
+  "book": "Book",
+  "chapter": "Chapter",
+  "verse": "Verse",
+  "count": "Cross references: {n}",
+  "none": "No cross references registered for this verse.",
+  "error": "The Bible data could not be loaded. Please reload the page.",
+  "hint": "The first scripture in the search results is the topic verse. The cross references follow it."
+ },
+ "ro": {
+  "nav": "Referințe încrucișate",
+  "title": "Bible Gems – Referințe încrucișate",
+  "book": "Cartea",
+  "chapter": "Capitolul",
+  "verse": "Versetul",
+  "count": "Referințe: {n}",
+  "none": "Pentru acest verset nu sunt înregistrate referințe încrucișate.",
+  "error": "Datele biblice nu au putut fi încărcate. Reîncarcă pagina.",
+  "hint": "Primul verset din rezultatele căutării este versetul-subiect. Urmează referințele încrucișate."
+ },
+ "sv": {
+  "nav": "Korsreferenser",
+  "title": "Bible Gems – Korsreferenser",
+  "book": "Bok",
+  "chapter": "Kapitel",
+  "verse": "Vers",
+  "count": "Korsreferenser: {n}",
+  "none": "Inga korsreferenser är registrerade för det här verset.",
+  "error": "Bibeldatan kunde inte laddas. Ladda om sidan.",
+  "hint": "Det första bibelstället i sökresultatet är ämnesversen. Korsreferenserna kommer efter det."
+ }
 }
